@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="bootstrap.html">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="bootstrap.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bootstrap.html">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="bootstrap.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="bootstrap.html">Action</a></li>
+                                <li><a class="dropdown-item" href="bootstrap.html">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="bootstrap.html">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="p-5 text-center bg-image rounded-3" style="
+        background-image: url('image/image2.jpg'); height: 300px;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Heading</h1>
+                        <h4 class="mb-3">Subheading</h4>
+                        <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 px-3 mx-auto">
+            <h1>Hello, Bootstrap and Parcel!</h1>
+            <button class="btn btn-primary">Primary button</button>
+        </div>
+        <div class="container">
+            <h2>Basic Table</h2>
+            <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <h2>Alerts</h2>
+            <div class="alert alert-success">
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+            <div class="alert alert-info">
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            </div>
+        </div>
+        <div class="container">
+            <h2>Button Styles</h2>
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div class="container">
+            <h2>Horizontal form</h2>
+            <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="remember"> Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Horizontal form: control states</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Focused</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="focusedInput" type="text" value="Click to focus...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="disabledInput" class="col-sm-2 control-label">Disabled</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..."
+                            disabled>
+                    </div>
+                </div>
+                <fieldset disabled>
+                    <div class="form-group">
+                        <label for="disabledTextInput" class="col-sm-2 control-label">Disabled input and select list
+                            (Fieldset disabled)</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledSelect" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <select id="disabledSelect" class="form-control">
+                                <option>Disabled select</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group has-success has-feedback">
+                    <label class="col-sm-2 control-label" for="inputSuccess">Input with success and glyphicon</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputSuccess">
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                </div>
+                <div class="form-group has-warning has-feedback">
+                    <label class="col-sm-2 control-label" for="inputWarning">Input with warning and glyphicon</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputWarning">
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                    </div>
+                </div>
+                <div class="form-group has-error has-feedback">
+                    <label class="col-sm-2 control-label" for="inputError">Input with error and glyphicon</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputError">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default variables. It's also worth noting that just about
+                        any
+                        HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that
+                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that
+                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center bg-info border border-danger">
+            <div class="row border border-danger">
+                <div class="col-md-8 border border-danger">.col-md-8</div>
+                <div class="col-6 col-md-4 border border-danger">.col-6 .col-md-4</div>
+            </div>
+            <div class="row border border-danger">
+                <div class="col-6 col-md-4 border border-danger">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4 border border-danger">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4 border border-danger">.col-6 .col-md-4</div>
+            </div>
+            <div class="row border border-danger">
+                <div class="col-6 border border-danger">.col-6</div>
+                <div class="col-6 border border-danger">.col-6</div>
+            </div>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+        <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+            <div class="me-5">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Company name</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Help</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
